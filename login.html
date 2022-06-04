@@ -1,0 +1,107 @@
+<?php
+require('connection.php');
+require('functions.inc.php');
+
+?>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<fieldset>
+		<form>
+		<a href="reg.php"style="float: right;"> Registration</a>
+		<br/>
+	</form>
+	</fieldset>
+	<fieldset>
+   
+    <form action="logcheck.php" method="post">
+		<fieldset>
+			<legend>LOGIN</legend>
+		<table>
+			<tr>
+				<td>User Name :</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="">Remember Me</ins></td>
+			</tr>
+			<tr>
+				<td><input type="Submit" name="submit" value="submit"></td>
+				<td><a href="forgotpassword.html">Forgot Password?</a></td>  
+			</tr>
+		</table>
+		</fieldset>
+
+		</fieldset>
+		<fieldset style="text-align: center;">copyright 2022</fieldset>
+	</form>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+    body{
+        background-image: url("https://images.pexels.com/photos/2457284/pexels-photo-2457284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") ;
+    
+        /* Full height */
+        height: 100vh; 
+    
+        /* Center and scale the image nicely */
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="stylelogin.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    
+    <div>
+        
+        <div class="form">
+            <a href="reg.php"style="float: right;"> Registration</a><br><br>
+
+            <div style="color:white; text-align:left">User Name</div>    
+            
+            <form action="logcheck.php" method="post">
+                
+                <input type="text" name="username" placeholder="enter username"><br>
+                <div style="color:white; text-align:left">password</div>    
+                <input type="password" class="form-control" id= password name="password" placeholder="enter password"><br><br>
+                <input type="submit" name="submit" value="submit">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
