@@ -10,9 +10,6 @@ if(!isset($_SESSION['username'])){
 }
 // cannot get into home without loggin in
 
-$sql3 = "SELECT category FROM category";
-$res3 = mysqli_query($con, $sql3);
-$array=array();
 
 ?>
 
@@ -72,24 +69,11 @@ $array=array();
             <div class="row">
                 <div>
                 <ul>
-                    <li><img src="assets/images/logo.png" alt="Logo"></li>
+                    <!-- <li><img src="assets/images/logo.png" alt="Logo"></li> -->
                     <li style="margin-left:8px"><h2>Welcome <?php echo $_SESSION['username']; ?></h2></li>
                     <a href ="logout.php" style="margin-left:20px"> logout </a> <br> <br>
-                    <li><a class="active">Categories</a></li>
-                    <li><a href="cart.php">Cart</a></li>
-
-                    <?php
-
-                    while($row = mysqli_fetch_assoc($res3)){?>
-                        
-                    <span style="margin-left:20px"><?php print $row["category"]." ";?></span>
-                    <li><a href="#" name="cid2" value="<?php print $row["category"] ?>"></li>
-
-                    <?php }
-                    $row1 = mysqli_fetch_assoc($res3);
-                    print_r($row1);
-
-                    ?>
+                    <!-- <li><a class="active">Categories</a></li> -->
+                    <li style="margin-left:20px"><a href="cart.php">Cart</a></li>
                 </ul>
                 </div>
             </div> <!-- row -->

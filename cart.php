@@ -168,7 +168,7 @@
 
   <div class="float-right">
     <button type="button" onclick="location.href='home.php'"  class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
-    <button type="button" onclick="location.href='home.php'" class="btn btn-lg btn-primary mt-2">Checkout</button>
+    <button type="button" onclick="location.href='checkout.php'" class="btn btn-lg btn-primary mt-2">Checkout</button>
   </div>
 </form>
 
