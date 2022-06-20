@@ -18,7 +18,7 @@
   // include('action.php');
   include('connection.php');
 
-
+  $x=$_SESSION['username'];
   $conn = mysqli_connect('localhost', 'root', '', 'zerox');
 
   if (isset($_POST['submit'])) {
@@ -61,7 +61,7 @@
 }
 
 
-  $s = "SELECT username from  registration";
+  $s = "SELECT username from registration";
 
   $result = mysqli_query($conn, $s);
   // stores query
@@ -83,10 +83,10 @@
 
 
 
-  $sql = "SELECT id,unit,cart_product_name,cart_product_price,stock FROM cart";
+  $sql = "SELECT id,unit,cart_product_name,cart_product_price,stock FROM cart where customer_name = '$x'";
   $res = mysqli_query($conn, $sql);
 
-  $sql2 = "SELECT SUM(unit*cart_product_price) FROM cart";
+  $sql2 = "SELECT SUM(unit*cart_product_price) FROM cart where customer_name = '$x'";
   $res2 = mysqli_query($conn, $sql2);
   $row2 = mysqli_fetch_assoc($res2);
 
@@ -167,7 +167,7 @@
 
 
   <div class="float-right">
-    <button type="button" onclick="location.href='home.php'"  class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
+    <button type="button" onclick="location.href='/zerox/home.php'"  class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
     <button type="button" onclick="location.href='checkout.php'" class="btn btn-lg btn-primary mt-2">Checkout</button>
   </div>
 </form>

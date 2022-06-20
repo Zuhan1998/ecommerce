@@ -74,6 +74,7 @@ if(!isset($_SESSION['username'])){
                     <a href ="logout.php" style="margin-left:20px"> logout </a> <br> <br>
                     <!-- <li><a class="active">Categories</a></li> -->
                     <li style="margin-left:20px"><a href="cart.php">Cart</a></li>
+                    <li style="margin-left:20px"><a href="history.php">Order History</a></li>
                 </ul>
                 </div>
             </div> <!-- row -->
@@ -84,7 +85,6 @@ if(!isset($_SESSION['username'])){
 
 <div>
   <!-- <h2><input type="text" placeholder="Search products.."></h2> -->
-  <h3>Product List</h3>
 </div>
     <!--====== PRODUCT PART START ======-->
     
@@ -92,7 +92,8 @@ if(!isset($_SESSION['username'])){
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-9 col-md-8">
+                <div class="col-lg-9 col-md-8" style="margin-top: -169px;">
+                <h3>Product List</h3>
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
                             <div class="product-items mt-30">

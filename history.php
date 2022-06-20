@@ -8,7 +8,9 @@
         // include('checkout.php');
 
         $conn =  mysqli_connect('localhost','root','','zerox');
-        $sql = "SELECT * FROM orders";
+
+        $x=$_SESSION['username'];
+        $sql = "SELECT * FROM orders where customer_name='$x'";
         $res =  mysqli_query($conn, $sql);
 
 

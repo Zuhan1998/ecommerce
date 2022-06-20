@@ -19,7 +19,8 @@
 
   $conn = mysqli_connect('localhost','root','','zerox');
 
-  $sql = "SELECT * FROM cart";
+  $x=$_SESSION['username'];
+  $sql = "SELECT * FROM cart where customer_name = '$x'";
   $res = mysqli_query($conn, $sql);
 
   $x = 0;

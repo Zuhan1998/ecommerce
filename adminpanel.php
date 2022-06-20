@@ -21,12 +21,11 @@
             <div>
                 <div>
                 <ul>
-                    <li><img src="assets/images/logo.png" alt="Logo"></li>
-                    <li><h1>Welcome Admin</h1></li>
+                    <h1>Welcome Admin</h1>
                     <a href ="logout.php"> logout </a> <br> <br>
                     <li><a href ="products.php">Products</a></li>
                     <li><a href="users.php">Users</a></li>
-                    <li><a href="verification.php">Verify Order</a></li>
+                    <li><a href="report.php">Report</a></li>
                     <li><a href="order.php">Manage Order</a></li>
                     <li><a href="manageCategory.php">Manage Category</a></li>
                 </ul> <!-- navbar -->
